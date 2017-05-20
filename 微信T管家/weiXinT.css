@@ -7,6 +7,7 @@
 a{
 	text-decoration: none;
 }
+/*================顶部导航栏=========================================*/
 header{
 	height: 60px;
 	width: 100%;
@@ -38,7 +39,7 @@ nav ul li a{
 nav ul li:hover{
 	background: #fea005;
 }
-/*右侧小圆点*/
+/*=============右侧小圆点======================================*/
 .rightDot{
 	height: 142px;
 	width: 28px;
@@ -59,7 +60,7 @@ nav ul li:hover{
 	background: gray;
 	margin: 3px 8px;
 }
-/*第一页*/
+/*===============第一页========================================*/
 .first{
 	width: 100%;
 	height: 900px;
@@ -82,6 +83,17 @@ nav ul li:hover{
 	position: absolute;
 	bottom: 80px;
 	left: -10px;
+	animation:twoChild 1s linear 0s 1;
+}
+@-webkit-keyframes twoChild{
+	from{
+		left: -50px;
+		opacity: 0;
+	}
+	to{
+		left: -10px;
+		opacity: 1;
+	}
 }
 .first .firstContent .firstRight{
 	width: 400px;
@@ -112,10 +124,19 @@ nav ul li:hover{
 }
 .first .firstContent .firstRight img:nth-child(3){
 	position: absolute;
-	top: 166px;
+	bottom: 30px;
 	right: 0px;
+	animation:b104 1s linear 0s 1;
 }
-/*第二页*/
+@-webkit-keyframes b104{
+	from{
+		bottom: -330px;
+	}
+	two{
+		bottom: 30px;
+	}
+}
+/*=====================第二页====================================*/
 .second{
 	width: 100%;
 	height: 900px;
@@ -125,37 +146,72 @@ nav ul li:hover{
 	width: 1310px;
 	height: 900px;
 	margin: 0 auto;
-	border: 1px solid red;
 	position: relative;
 	overflow: hidden;
 }
 .second .secondContent img:nth-child(1){
 	position: absolute;
 	left: -215px;
-	bottom: -25px;
+	bottom: -40px;
+	animation:b201 2s linear 0s 1;
+}
+@-webkit-keyframes b201{
+	from{
+		bottom: -400px;
+	}
+	to{
+		bottom: -40px;
+	}
 }
 .second .secondContent img:nth-child(2){
 	position: absolute;
 	left: 305px;
-	bottom: 545px;
+	top: 300px;
+	animation:b203 2s linear 0s 1;
+}
+@-webkit-keyframes b203{
+	from{
+		top: -50px;
+	}
+	to{
+		top: 300px;
+	}
 }
 .second .secondContent img:nth-child(3){
 	position: absolute;
 	left: 795px;
-	bottom: 455px;
+	top: 400px;
 	z-index: 1;
+	animation:b204 2s linear 0s 1;
+}
+@-webkit-keyframes b204{
+	from{
+		top: -50px;
+	}
+	to{
+		top: 400px;
+	}
 }
 .second .secondContent img:nth-child(4){
 	position: absolute;
 	right: 30px;
-	bottom: 180px;
+	top: 400px;
+	animation:b206 2s linear 0s 1;
+}
+@-webkit-keyframes b206{
+	from{
+		top: -50px;
+	}
+	to{
+		top: 400px;
+	}
 }
 .second .secondContent .wenzi{
 	width: 310px;
 	height: 215px;
 	color: #fff;
 	position: absolute;
-	bottom:330px;
+	bottom:323px;
 	left:635px; 
 }
 .second .secondContent .wenzi p{
@@ -168,7 +224,7 @@ nav ul li:hover{
 	font-size: 12.8px;
 	margin-top: 30px;
 }
-/*第三页*/
+/*=========================第三页=======================================*/
 .three{
 	width: 100%;
 	height: 950px;
@@ -178,7 +234,6 @@ nav ul li:hover{
 	width: 970px;
 	height: 950px;
 	margin: 0 395px auto;
-	border: 1px solid red;
 	position: relative;
 }
 .three .threeContent p{
@@ -231,6 +286,18 @@ nav ul li:hover{
 	position: absolute;
 	top: 50px;
 	left: 350px;
+	animation:xuanzhuan 4s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes xuanzhuan{
+    0%{
+    	transform:rotateZ(720deg) translateX(0) translateY(0);
+    }
+    50%{
+    	transform:rotateZ(0deg) translateX(300px) translateY(300px);
+    }
+    100%{
+    	transform:rotateZ(720deg) translateX(0px) translateY(0px);
+    }
 }
 .three .threeContent .methed ul li:nth-child(1){
 	width: 285px;
@@ -239,6 +306,15 @@ nav ul li:hover{
 	top: 60px;
 	left: 114px;
 	text-align: right;
+	animation:erweima 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes erweima{
+	from{
+		left: -300px;
+	}
+	to{
+		left: 114px;
+	}
 }
 .three .threeContent .methed ul li span:nth-child(1){
 	display: inline-block;
@@ -258,6 +334,15 @@ nav ul li:hover{
 	top: 204px;
 	left: 53px;
 	text-align: right;
+	animation:hudong 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes hudong{
+	from{
+		left: -300px;
+	}
+	to{
+		left: 53px;
+	}
 }
 .three .threeContent .methed ul li:nth-child(3){
 	width: 285px;
@@ -266,6 +351,15 @@ nav ul li:hover{
 	top: 355px;
 	left: 113px;
 	text-align: right;
+	animation:huiyuan 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes huiyuan{
+	from{
+		left: -300px;
+	}
+	to{
+		left: 113px;
+	}
 }
 .three .threeContent .methed ul li:nth-child(4){
 	width: 285px;
@@ -274,6 +368,15 @@ nav ul li:hover{
 	top: 60px;
 	right: 3px;
 	text-align: left;
+	animation:jiaoyi 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes jiaoyi{
+	from{
+		right: -500px;
+	}
+	to{
+		right: 3px;
+	}
 }
 .three .threeContent .methed ul li:nth-child(5){
 	width: 230px;
@@ -282,6 +385,15 @@ nav ul li:hover{
 	top: 204px;
 	right: 9px;
 	text-align: left;
+	animation:yijian 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes yijian{
+	from{
+		right: -500px;
+	}
+	to{
+		right: 9px;
+	}
 }
 .three .threeContent .methed ul li:nth-child(6){
 	width: 250px;
@@ -290,4 +402,203 @@ nav ul li:hover{
 	top: 355px;
 	right: 40px;
 	text-align: left;
+	animation:daohang 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes daohang{
+	from{
+		right: -500px;
+	}
+	to{
+		right: 40px;
+	}
+}
+/*=========================第四页=================================*/
+.fore{
+    width: 100%;
+	height: 900px;
+	background: url(images/b4_bg.jpg);
+}
+.fore .foreContent{
+	width: 1310px;
+	height: 900px;
+	margin: 0 auto;
+	border: 1px solid blue;
+	position: relative;
+	color: #fff;
+}
+.fore .foreContent .fwys{
+    font-size: 32px;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    width: 200px;
+    animation:fwysdh 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes fwysdh{
+    0%{
+       top: 900px;
+    }
+    40%{
+    	top: 200px;
+    }
+    100%{
+    	top: 200px;
+    }
+}
+.fore .foreContent div h5{
+	font-size: 16.64px;
+	margin-bottom: 5px;
+}
+.fore .foreContent div p{
+	font-size: 12.8px;
+}
+.fore .foreContent div:nth-child(1){
+	position: absolute;
+	left: 200px;
+	top: 300px;
+	animation:fwys01 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes fwys01{
+    0%{
+       top: 900px;
+    }
+    10%{
+    	top: 900px;
+    }
+    50%{
+    	top: 300px;
+    }
+    100%{
+    	top: 300px;
+    }
+}
+.fore .foreContent div:nth-child(2){
+	position: absolute;
+	left: 200px;
+	top: 360px;
+	animation:fwys02 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes fwys02{
+    0%{
+       top: 900px;
+    }
+    20%{
+    	top: 900px;
+    }
+    60%{
+    	top: 360px;
+    }
+    100%{
+    	top: 360px;
+    }
+}
+.fore .foreContent div:nth-child(3){
+	position: absolute;
+	left: 200px;
+	top: 420px;
+	animation:fwys03 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes fwys03{
+    0%{
+       top: 900px;
+    }
+    30%{
+    	top: 900px;
+    }
+    70%{
+    	top: 420px;
+    }
+    100%{
+    	top: 420px;
+    }
+}
+.fore .foreContent div:nth-child(4){
+	position: absolute;
+	left: 200px;
+	top: 480px;
+	animation:fwys04 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes fwys04{
+    0%{
+       top: 900px;
+    }
+    40%{
+    	top: 900px;
+    }
+    80%{
+    	top: 480px;
+    }
+    100%{
+    	top: 480px;
+    }
+}
+.fore .foreContent div:nth-child(5){
+	position: absolute;
+	left: 200px;
+	top: 540px;
+	animation:fwys05 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes fwys05{
+    0%{
+       top: 900px;
+    }
+    50%{
+    	top: 900px;
+    }
+    90%{
+    	top: 540px;
+    }
+    100%{
+    	top: 540px;
+    }
+}
+.fore .foreContent div:nth-child(6){
+	position: absolute;
+	left: 200px;
+	top: 600px;
+	animation:fwys06 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes fwys06{
+    0%{
+       top: 900px;
+    }
+    60%{
+    	top: 900px;
+    }
+    100%{
+    	top: 600px;
+    }
+}
+.fore .foreContent .img01{
+	position: absolute;
+	left: 650px;
+	top: 200px;
+	animation:b401 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes b401{
+	from{
+		left: 900px;
+		opacity: 0;
+	}
+	to{
+		left: 650px;
+		opacity: 1;
+	}
+}
+.fore .foreContent .img02{
+	position: absolute;
+	left: 900px;
+	top: 200px;
+	animation:b402 2s linear 0s 1 alternate forwards;
+}
+@-webkit-keyframes b402{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
