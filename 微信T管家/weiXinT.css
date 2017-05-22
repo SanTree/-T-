@@ -422,7 +422,6 @@ nav ul li:hover{
 	width: 1310px;
 	height: 900px;
 	margin: 0 auto;
-	border: 1px solid blue;
 	position: relative;
 	color: #fff;
 }
@@ -611,7 +610,6 @@ nav ul li:hover{
 .five .fiveContent{
 	width: 1310px;
 	height: 900px;
-	border: 1px solid red;
 	margin: 0 auto;
 	position: relative;
 }
@@ -635,7 +633,6 @@ nav ul li:hover{
 }
 .five .fiveContent .uls{
 	width: 870px;
-	border: 1px solid red;
 	position: absolute;
 	left: 50%;
 	top: 250px;
@@ -652,6 +649,13 @@ nav ul li:hover{
 	text-align: center;
 	font-size: 12.8px;
 	color: #777777; 
+	position: relative;
+	top: 0;
+	bottom: 0;
+
+}
+.five .fiveContent .uls li:nth-child(1){
+	animation:top 2s linear 0s 1;
 }
 .five .fiveContent .uls li:nth-child(1) div{
 	background: url(images/gnico_01.png) no-repeat center;
@@ -659,9 +663,15 @@ nav ul li:hover{
 	height: 90px;
 	margin: 0 auto;
 }
+.five .fiveContent .uls li:nth-child(1) div:hover{
+	background: url(images/gnico_01_1.png) no-repeat center;
+}
 .five .fiveContent .uls li .p01{
 	color: black;
 	font-size: 19.2px;
+}
+.five .fiveContent .uls li:nth-child(2){
+	animation:top 2s linear 0s 1;
 }
 .five .fiveContent .uls li:nth-child(2) div{
 	background: url(images/gnico_02.png) no-repeat center;
@@ -669,11 +679,23 @@ nav ul li:hover{
 	height: 90px;
 	margin: 0 auto;
 }
+.five .fiveContent .uls li:nth-child(2) div:hover{
+	background: url(images/gnico_02_1.png) no-repeat center;
+}
+.five .fiveContent .uls li:nth-child(3){
+	animation:top 2s linear 0s 1;
+}
 .five .fiveContent .uls li:nth-child(3) div{
 	background: url(images/gnico_03.png) no-repeat center;
 	width: 90px;
 	height: 90px;
 	margin: 0 auto;
+}
+.five .fiveContent .uls li:nth-child(3) div:hover{
+	background: url(images/gnico_03_1.png) no-repeat center;
+}
+.five .fiveContent .uls li:nth-child(4){
+	animation:top 2s linear 0s 1;
 }
 .five .fiveContent .uls li:nth-child(4) div{
 	background: url(images/gnico_04.png) no-repeat center;
@@ -681,11 +703,31 @@ nav ul li:hover{
 	height: 90px;
 	margin: 0 auto;
 }
+.five .fiveContent .uls li:nth-child(4) div:hover{
+	background: url(images/gnico_04_1.png) no-repeat center;
+}
+@-webkit-keyframes top{
+	from{
+       top: 173px;
+	}
+	to{
+		top:0px;
+	}
+}
+.five .fiveContent .uls li:nth-child(5){
+	animation: middle 2s linear 0s 1;
+}
 .five .fiveContent .uls li:nth-child(5) div{
 	background: url(images/gnico_05.png) no-repeat center;
 	width: 90px;
 	height: 90px;
 	margin: 0 auto;
+}
+.five .fiveContent .uls li:nth-child(5) div:hover{
+	background: url(images/gnico_05_1.png) no-repeat center;
+}
+.five .fiveContent .uls li:nth-child(6){
+	animation: middle 2s linear 0s 1;
 }
 .five .fiveContent .uls li:nth-child(6) div{
 	background: url(images/gnico_06.png) no-repeat center;
@@ -693,11 +735,23 @@ nav ul li:hover{
 	height: 90px;
 	margin: 0 auto;
 }
+.five .fiveContent .uls li:nth-child(6) div:hover{
+	background: url(images/gnico_06_1.png) no-repeat center;
+}
+.five .fiveContent .uls li:nth-child(7){
+	animation: middle 2s linear 0s 1;
+}
 .five .fiveContent .uls li:nth-child(7) div{
 	background: url(images/gnico_07.png) no-repeat center;
 	width: 90px;
 	height: 90px;
 	margin: 0 auto;
+}
+.five .fiveContent .uls li:nth-child(7) div:hover{
+	background: url(images/gnico_07_1.png) no-repeat center;
+}
+.five .fiveContent .uls li:nth-child(8){
+	animation: middle 2s linear 0s 1;
 }
 .five .fiveContent .uls li:nth-child(8) div{
 	background: url(images/gnico_08.png) no-repeat center;
@@ -705,11 +759,34 @@ nav ul li:hover{
 	height: 90px;
 	margin: 0 auto;
 }
+.five .fiveContent .uls li:nth-child(8) div:hover{
+	background: url(images/gnico_08_1.png) no-repeat center;
+}
+@-webkit-keyframes middle{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.five .fiveContent .uls li:nth-child(9){
+	animation: bottom 2s linear 0s 1;
+}
 .five .fiveContent .uls li:nth-child(9) div{
 	background: url(images/gnico_09.png) no-repeat center;
 	width: 90px;
 	height: 90px;
 	margin: 0 auto;
+}
+.five .fiveContent .uls li:nth-child(9) div:hover{
+	background: url(images/gnico_09_1.png) no-repeat center;
+}
+.five .fiveContent .uls li:nth-child(10){
+	animation: bottom 2s linear 0s 1;
 }
 .five .fiveContent .uls li:nth-child(10) div{
 	background: url(images/gnico_10.png) no-repeat center;
@@ -717,15 +794,74 @@ nav ul li:hover{
 	height: 90px;
 	margin: 0 auto;
 }
+.five .fiveContent .uls li:nth-child(10) div:hover{
+	background: url(images/gnico_10_1.png) no-repeat center;
+}
+.five .fiveContent .uls li:nth-child(11){
+	animation: bottom 2s linear 0s 1;
+}
 .five .fiveContent .uls li:nth-child(11) div{
 	background: url(images/gnico_11.png) no-repeat center;
 	width: 90px;
 	height: 90px;
 	margin: 0 auto;
 }
+.five .fiveContent .uls li:nth-child(11) div:hover{
+	background: url(images/gnico_11_1.png) no-repeat center;
+}
+.five .fiveContent .uls li:nth-child(12){
+	animation: bottom 2s linear 0s 1;
+}
 .five .fiveContent .uls li:nth-child(12) div{
 	background: url(images/gnico_12.png) no-repeat center;
 	width: 90px;
 	height: 90px;
 	margin: 0 auto;
+}
+.five .fiveContent .uls li:nth-child(12) div:hover{
+	background: url(images/gnico_12_1.png) no-repeat center;
+}
+@-webkit-keyframes bottom{
+	from{
+		top: -173px;
+	}
+	to{
+		top: 0px; 
+	}
+}
+/*==============================第六页====================================*/
+.six{
+	width: 100%;
+	height: 900px;
+	background: url(images/b6_bg.jpg);
+}
+.six .sixContent{
+	width: 1310px;
+	height: 900px;
+	margin: 0 auto;
+	border:1px solid red;
+	position: relative;
+}
+.six .sixContent .sixTitle{
+    width: 200px;
+    position: absolute;
+    left: 250px;
+    top: 200px;
+    color: #fff;
+}
+.six .sixContent .sixTitle p:nth-child(1){
+	width: 200px;
+	height: 42px;
+	display: inline-block;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.six .sixContent .midPhoto{
+	width: 533px;
+	height: 423px;
+	position: absolute;
+	left: 50%;
+	top: 300px;
+	margin-left: -266px;
+	background: url(images/b6_img.png);
 }
