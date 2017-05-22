@@ -848,6 +848,15 @@ nav ul li:hover{
     left: 250px;
     top: 200px;
     color: #fff;
+    animation: com 3s ease 0s 1 forwards;
+}
+@-webkit-keyframes com{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 .six .sixContent .sixTitle p:nth-child(1){
 	width: 200px;
@@ -864,4 +873,160 @@ nav ul li:hover{
 	top: 300px;
 	margin-left: -266px;
 	background: url(images/b6_img.png);
+}
+.six .sixContent .midPhoto img:nth-child(1){
+	position: absolute;
+	top: 3px;
+	left: 144px;
+}
+.six .sixContent .midPhoto img:nth-child(2){
+	position: absolute;
+	top: 3px;
+	left: 377px;
+}
+.six .sixContent .midPhoto img:nth-child(3){
+	position: absolute;
+	top: 149px;
+	left: 3px;
+}
+.six .sixContent .midPhoto img:nth-child(4){
+	position: absolute;
+	top: 148px;
+	right: 4px;
+}
+.six .sixContent .midPhoto img:nth-child(5){
+	position: absolute;
+	top: 331px;
+	left: 51px;
+}
+.six .sixContent .midPhoto img:nth-child(6){
+	position: absolute;
+	top: 331px;
+	right: 54px;
+}
+.six .sixContent .midPhoto img:nth-child(7){
+	position: absolute;
+	bottom: 2px;
+	left: 262px;
+}
+.six .sixContent .midPhoto .jiantou{
+	width: 40px;
+	height: 35px;
+	position: absolute;
+	left: 250px;
+	top: 120px;
+	overflow: hidden;
+}
+.six .sixContent .midPhoto .jiantou div:nth-child(1){
+	width: 15px;
+	height: 35px;
+	float: left;
+	opacity: 0;
+	background: url(images/b6_arrow.png) 0px 0px;
+	animation: up 2s linear 3s infinite forwards;
+}
+@-webkit-keyframes up{
+    0%{
+    	position: relative;
+    	top: 37px;
+    	opacity: 0;
+    }
+    1%{
+    	position: relative;
+    	top: 37px;
+    	opacity: 1;
+    }
+    100%{
+    	position: relative;
+    	top: -37px;
+    	opacity: 1;
+    }
+}
+.six .sixContent .midPhoto .jiantou div:nth-child(2){
+	width: 15px;
+	height: 35px;
+	float: right;
+	opacity: 0;
+	background: url(images/b6_arrow.png) -14px 0px;
+	animation: down 2s linear 3s infinite forwards;
+}
+@-webkit-keyframes down{
+    0%{
+    	position: relative;
+    	top: -37px;
+    	opacity: 0;
+    }
+    1%{
+    	position: relative;
+    	top: -37px;
+    	opacity: 1;
+    }
+    100%{
+    	position: relative;
+    	top: 37px;
+    	opacity: 1;
+    }
+}
+.six .sixContent .midPhoto .zi{
+	width: 533px;
+	height: 423px;
+	position: relative;
+	font-size: 12.8px;
+	color: #fff;
+}
+.six .sixContent .midPhoto .zi div{
+	width: 200px;
+	height: 40px;
+	animation: com 3s ease 0s 1 forwards;
+}
+.six .sixContent .midPhoto .zi div:nth-child(1){
+    position: absolute;
+    left: 60px;
+    top: -25px;
+}
+.six .sixContent .midPhoto .zi div:nth-child(2){
+    position: absolute;
+    left: 403px;
+    top: -15px;
+}
+.six .sixContent .midPhoto .zi div:nth-child(3){
+    position: absolute;
+    left: 538px;
+    top: 140px;
+}
+.six .sixContent .midPhoto .zi div:nth-child(4){
+    position: absolute;
+    left: 488px;
+    top: 335px;
+}
+.six .sixContent .midPhoto .zi div:nth-child(5){
+    position: absolute;
+    left: 203px;
+    top: 430px;
+}
+.six .sixContent .midPhoto .zi div:nth-child(6){
+    position: absolute;
+    left: -50px;
+    top: 335px;
+}
+.six .sixContent .midPhoto .zi div:nth-child(7){
+    position: absolute;
+    left: -125px;
+    top: 140px;
+}
+.six .sixContent .shou{
+	position: absolute;
+	right: 50px;
+	top: 550px;
+	animation: hand 3s ease-out 0s 1;
+}
+@-webkit-keyframes hand{
+	0%{
+		opacity: 0;
+		right: 650px;
+	}
+	100%{
+		opacity: 1;
+		right: 50px;
+	}
 }
