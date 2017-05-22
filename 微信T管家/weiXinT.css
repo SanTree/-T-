@@ -1030,3 +1030,91 @@ nav ul li:hover{
 		right: 50px;
 	}
 }
+/*=============================第七页========================================*/
+.seven{
+	width: 100%;
+	height: 900px;
+	background: url(images/b7_bg.jpg);
+}
+.seven .sevenContent{
+	width: 1310px;
+	height: 900px;
+	border:1px solid red;
+	margin: 0 auto;
+	position: relative;
+}
+.seven .sevenContent .jrwm{
+	width: 200px;
+	text-align: center;
+	font-size: 32px;
+	color: #6e6e6e;
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	margin-left: -100px;
+}
+.seven .sevenContent .online{
+	width: 867px;
+	height: 360px;
+	position: absolute;
+	left: 50%;
+	bottom: 200px;
+	margin-left: -433px;
+	border:1px solid green;
+}
+.seven .sevenContent .online div:nth-child(1){
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin: 20px 20px 0 0;
+	background: url(images/b7_sprite.png) -120px -105px;
+}
+.seven .sevenContent .online div:nth-child(2){
+	display: inline-block;
+	width: 110px;
+	height: 45px;
+	position: relative;
+	top: 10px;
+	margin-right: 20px;
+	background: url(images/b7_sprite.png) 0px -100px;
+}
+.seven .sevenContent .online .onlineSpan{
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	font-size: 24px;
+	margin-bottom: 30px;
+	color: #fea005;
+}
+.seven .sevenContent .online input{
+	display: block;
+	width: 221px;
+	height: 35px;
+	font-size: 16px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+.seven .sevenContent .online #login_id{
+	margin-top: 22px;
+}
+.seven .sevenContent .online #but_login{
+	width: 140px;
+	height: 38px;
+	color: #fff;
+	background: #ffa510;
+}
+.seven .sevenContent .online #register{
+	position: relative;
+	left: 435px;
+	top: -220px;
+}
+.seven .sevenContent .online #register #register_id{
+	margin-top: 22px;
+
+}
+.seven .sevenContent .online #register #but_register{
+	width: 140px;
+	height: 38px;
+	color: #fff;
+	background: #ffa510;
+}
