@@ -7,12 +7,16 @@
 a{
 	text-decoration: none;
 }
+body{
+	padding-top: 60px;
+}
 /*================顶部导航栏=========================================*/
 header{
 	height: 60px;
 	width: 100%;
 	background-color: #90ee90;
 	position: fixed;
+	top: 0;
 	z-index: 1;
 }
 nav{
@@ -63,7 +67,7 @@ nav ul li:hover{
 /*===============第一页========================================*/
 .first{
 	width: 100%;
-	height: 900px;
+	height: 980px;
 	position: relative;
 	top: 0px;
 	background: url(images/b1_bg.jpg);
@@ -139,7 +143,7 @@ nav ul li:hover{
 /*=====================第二页====================================*/
 .second{
 	width: 100%;
-	height: 900px;
+	height: 980px;
 	background: url(images/b2_bg.jpg);
 }
 .second .secondContent{
@@ -227,7 +231,7 @@ nav ul li:hover{
 /*=========================第三页=======================================*/
 .three{
 	width: 100%;
-	height: 950px;
+	height: 980px;
 	background: url(images/b3_bg.jpg);
 }
 .three .threeContent{
@@ -415,7 +419,7 @@ nav ul li:hover{
 /*=========================第四页=================================*/
 .fore{
     width: 100%;
-	height: 900px;
+	height: 980px;
 	background: url(images/b4_bg.jpg);
 }
 .fore .foreContent{
@@ -424,6 +428,7 @@ nav ul li:hover{
 	margin: 0 auto;
 	position: relative;
 	color: #fff;
+	overflow: hidden;
 }
 .fore .foreContent .fwys{
     font-size: 32px;
@@ -604,7 +609,7 @@ nav ul li:hover{
 /*=============================第五页=================================*/
 .five{
 	width: 100%;
-	height: 900px;
+	height: 980px;
 	background: url(images/b5_bg.jpg);
 }
 .five .fiveContent{
@@ -832,14 +837,13 @@ nav ul li:hover{
 /*==============================第六页====================================*/
 .six{
 	width: 100%;
-	height: 900px;
+	height: 980px;
 	background: url(images/b6_bg.jpg);
 }
 .six .sixContent{
 	width: 1310px;
 	height: 900px;
 	margin: 0 auto;
-	border:1px solid red;
 	position: relative;
 }
 .six .sixContent .sixTitle{
@@ -1033,13 +1037,12 @@ nav ul li:hover{
 /*=============================第七页========================================*/
 .seven{
 	width: 100%;
-	height: 900px;
+	height: 980px;
 	background: url(images/b7_bg.jpg);
 }
 .seven .sevenContent{
 	width: 1310px;
 	height: 900px;
-	border:1px solid red;
 	margin: 0 auto;
 	position: relative;
 }
@@ -1060,7 +1063,6 @@ nav ul li:hover{
 	left: 50%;
 	bottom: 200px;
 	margin-left: -433px;
-	border:1px solid green;
 }
 .seven .sevenContent .online div:nth-child(1){
 	display: inline-block;
