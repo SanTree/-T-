@@ -33,3 +33,12 @@ window.onload = function(){
     	}
    };
 }
+
+$(function(){
+    $(".fresh").click(function(){
+        refresh();
+    })
+})
+function refresh(){
+    window.location.reload();
+}
